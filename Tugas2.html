@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Manajemen Siswa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
   .hero-section 
   {
@@ -18,33 +19,140 @@
 </head>
 <body class="bg-light">
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container">
+    
+<!-- Logo + Nama -->
+<a class="navbar-brand d-flex align-items-center fw-bold">
+    <img
+    src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" 
+    alt="Logo" width="40" height="40" class="me-2">SMK Digital
+</a>
+
+ <!-- Toggle Button(menampilkan atau menyembunyikan menu navigasi pada layar kecil (mobile))-->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+    
+<!-- Menu Kanan -->
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Beranda</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#bagian-visi-misi">Visi Misi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#bagian-jurusan">Jurusan</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#bagian-tabel">Data Siswa</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</nav>
 <!--Hero section-->
 <header class="hero-section text-center">
-    <div class="container">
-            <h1 class="display-3 fw-bold">Sistem Manajemen Siswa</h1>
-            <p class="lead">Kelola data kehadiran, profil, dan status akademik siswa dengan lebih mudah dan efisien.</p>
-        <div class="mt-4">
-            <a href="#bagian-tabel" class="btn btn-primary">Lihat Tabel</a>
-            <button type="button" class="btn btn-outline-light position-relative">Panduan<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Baru<span class="visually-hidden">unread messages</span></span>
-            </button>
-        </div>
+<div class="container">
+    <h1 class="display-3 fw-bold">Inovatif, Terampil, Berkarakter</h1>
+    <p class="lead">SMK Digital hadir sebagai pusat unggulan pendidikan vokasi yang mengintregasikan kurikulum industri, teknologi mutakhir, dan pengembangan karakter untuk mencetak lulusan yang siap bersaing di pasar global.</p>
+    <div class="mt-4">
+    <a href="#bagian-tabel" class="btn btn-primary">Data Siswa</a>
+    <a href="#bagian-statistik" type="button" class="btn btn-outline-light position-relative">Statistik<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Baru<span class="visually-hidden">unread messages</span></span>
+    </a>
     </div>
+</div>
 </header>
 
 <!--Menu-->
 <nav class="container mt-3" aria-label="breadcrumb">
   <ol class="breadcrumb p-3 bg-light rounded shadow-sm">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
     <li class="breadcrumb-item"><a href="#bagian-dashboard">Dashboard</a></li>
-    <li class="breadcrumb-item"><a href="#bagian-visi">Visi Misi</a></li>
+    <li class="breadcrumb-item"><a href="#bagian-visi-misi">Visi Misi</a></li>
     <li class="breadcrumb-item"><a href="#bagian-jurusan">Jurusan</a></li>
     <li class="breadcrumb-item"><a href="#bagian-tabel" >Data Siswa 2026</a></li>
   </ol>
 </nav>
 
+<!--Mengapa SMK Digital?-->
+<div class="container my-5">
+    <h2 class="text-center mb-5 fw-bold" style="color: hwb(225 1% 96%);">Mengapa SMK Digital?</h2>
+    
+    <div class="row mb-4">
+        <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-start">
+                <div class="me-3">
+                    <i class="bi bi-mortarboard-fill" style="color: #007bff;"></i>
+                </div>
+                <div>
+                    <h5 class="fw-bold">Lulusan</h5>
+                    <p class="small text-muted">SMK Digital meluluskan banyak siswa yang tak hanya bekerja namun juga berwirausaha dan sekolah tinggi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-start">
+                <div class="me-3">
+                    <i class="bi bi-award-fill" style="color: #007bff;"></i>
+                </div>
+                <div>
+                    <h5 class="fw-bold">Prestasi</h5>
+                    <p class="small text-muted">SMK Digital mendapat beberapa prestasi baik dari tingkat lokal sampai internasional.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-start">
+                <div class="me-3">
+                    <i class="bi bi-building-fill" style="color: #007bff;"></i>
+                </div>
+                <div>
+                    <h5 class="fw-bold">Fasilitas</h5>
+                    <p class="small text-muted">SMK Digital memiliki lingkungan belajar yang nyaman serta kelengkapan sarana dan prasarana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <div class="d-flex align-items-start">
+                <div class="me-3">
+                    <i class="bi bi-book-half" style="color: #007bff;"></i>
+                </div>
+                <div>
+                    <h5 class="fw-bold">Kurikulum</h5>
+                    <p class="small text-muted">Kurikulum SMK Digital menerapkan Kurikulum Merdeka untuk semua tingkat/kelasnya.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 mb-4">
+            <div class="d-flex align-items-start">
+                <div class="me-3">
+                    <i class="bi bi-people-fill" style="color: #007bff;"></i>
+                </div>
+                <div>
+                    <h5 class="fw-bold">Budaya Industri</h5>
+                    <p class="small text-muted">SMK Digital telah menerapkan beberapa budaya industri di lingkungan sekolah.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
 <!--Visi Lembaga-->
 <div class="container mt-4">
-    <h3 class="text-center my-4" id="bagian-visi">Visi & Misi Lembaga</h3>
+    <h3 class="text-center my-4" id="bagian-visi-misi">Visi & Misi Lembaga</h3>
     <div class="row g-4">
     <div class="col-md-6">
     <div class="card h-100 shadow-sm">
@@ -172,6 +280,28 @@
 </div>
 </div>
 </div>
+
+<br>
+
+<!--Dashboard-->
+<div style="background-color: #007bff; color: white; display: flex; justify-content: space-around; align-items: center; padding: 40px 20px; font-family: sans-serif; text-align: center;">
+    <div>
+        <h1 style="margin: 0; font-size: 32px;"><i class="bi bi-people-fill"></i> 2329</h1>
+        <p style="margin: 5px 0 0; font-size: 14px;">Siswa Aktif</p>
+    </div>
+    <div>
+        <h1 style="margin: 0; font-size: 32px;"><i class="bi bi-star-fill"></i> 93%</h1>
+        <p style="margin: 5px 0 0; font-size: 14px;">Keterserapan</p>
+    </div>
+    <div>
+        <h1 style="margin: 0; font-size: 32px;"><i class="bi bi-file-earmark-text-fill"></i> A</h1>
+        <p style="margin: 5px 0 0; font-size: 14px;">Akreditasi</p>
+    </div>
+    <div>
+        <h1 style="margin: 0; font-size: 32px;"><i class="bi bi-diagram-3-fill"></i> 130</h1>
+        <p style="margin: 5px 0 0; font-size: 14px;">Mitra Kerja</p>
+    </div>
+</div>
 <!--Tabel Data Siswa-->
 <div class="card mt-5 mb-5 shadow-sm" id="bagian-tabel">
     <div class="card-body">
@@ -216,7 +346,7 @@
             <td>
             <div class="position-relative d-inline-block">
                 <img src="https://images.pexels.com/photos/26871121/pexels-photo-26871121.jpeg" class="rounded-circle img-fluid" alt="Siswa" style="max-width: 80px; max-height: 80px;">
-                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle"></span>
                 <span class="visually-hidden">Status</span></span>
             </div>
             </td>
@@ -257,13 +387,13 @@
 </nav>
 <!--Statistik Kehadiran Siswa-->
 <br>
-    <h4 class="text-center">Statistik Kehadiran Siswa</h4>
+    <h4 class="text-center" id="bagian-statistik">Statistik Kehadiran Siswa</h4>
     <h6 class="text-center">Statistik kehadiran siswa secara online</h6>
     <br>
 <div class="progress" style="height: 25px;">
     <div class="progress-bar bg-success" role="progressbar" style="width: 33.33%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Hadir 33.33%</div>
-    <div class="progress-bar bg-warning" role="progressbar" style="width: 33.33%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Izin 33.33%</div>
-    <div class="progress-bar bg-danger" role="progressbar" style="width: 33.33%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Alfa 33.33%</div>
+    <div class="progress-bar bg-warning" role="progressbar" style="width: 33.33%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Izin 33.33.%</div>
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 33.33%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Alfa 33.33%.</div>
 </div>
 <br>
 
@@ -271,4 +401,3 @@
 
 </body>
 </html>
-
